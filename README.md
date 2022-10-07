@@ -88,11 +88,11 @@ If requirements above are not installed in your computer, you'll need to install
 
 - Clone the repository
   ```sh
-  git clone https://github.com/Michaelajayi150/Url-Shortener.git
+  git clone https://github.com/Michaelajayi150/URL-Shortener.git
   ```
 - Navigate to repository folder
   ```sh
-  cd Url-Shortener
+  cd URL-Shortener
   ```
 - Install npm packages
   ```sh

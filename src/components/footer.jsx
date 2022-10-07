@@ -14,11 +14,11 @@ function Footer() {
     <footer className="bg-very_dark_violet py-10">
       <div className="px-4 max-w-screen-lg mx-auto">
         <div className="flex flex-col items-center justify-between md:flex-row md:items-start md:flex-wrap">
-          <nav className="h-8 footer-image mb-10">
+          <div className="h-8 footer-image mb-10">
             <img src={logo} alt="Shortly" />
-          </nav>
+          </div>
 
-          <nav className="grid gap-4 text-center text-grayish_violet md:grid-cols-3 md:ml-auto md:mr-6 md:gap-16 md:text-start">
+          <div className="grid gap-4 text-center text-grayish_violet md:grid-cols-3 md:ml-auto md:mr-6 md:gap-16 md:text-start">
             {links.map((link, index) => (
               <div key={index} className="mb-4">
                 <span className="text-white font-semibold mb-3">
@@ -37,9 +37,9 @@ function Footer() {
                 </div>
               </div>
             ))}
-          </nav>
+          </div>
 
-          <nav className="flex socials space-x-6 mt-4 items-center justify-between lg:mt-0 md:mx-auto lg:mx-0">
+          <div className="flex socials space-x-6 mt-4 items-center justify-between lg:mt-0 md:mx-auto lg:mx-0">
             <a href="/">
               <img src={facebook} alt="Michael Ajayi Facebook" />
             </a>
@@ -52,7 +52,7 @@ function Footer() {
             <a href="https://www.instagram.com/the_dev.io/">
               <img src={instagram} alt="Michael Ajayi instagram" />
             </a>
-          </nav>
+          </div>
         </div>
 
         <div className="attribution text-white mt-4">

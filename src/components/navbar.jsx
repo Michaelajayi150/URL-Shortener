@@ -11,11 +11,11 @@ function Navbar({ joinclass }) {
     <header className="px-4 relative max-w-screen-lg mx-auto pt-6 flex items-center md:items-end justify-between">
       <img src={logo} alt="Shortly" />
 
-      <nav onClick={toggle} className="md:hidden">
+      <div onClick={toggle} className="md:hidden">
         <img src={menu} alt="Open menu" />
-      </nav>
+      </div>
 
-      <nav className="hidden md:flex w-full items-center justify-between text-grayish_violet">
+      <div className="hidden md:flex w-full items-center justify-between text-grayish_violet">
         <div className="flex space-x-4 items-center justify-between px-6">
           <a href="/">Features</a>
           <a href="/">Pricing</a>
@@ -27,9 +27,9 @@ function Navbar({ joinclass }) {
             Sign Up
           </span>
         </div>
-      </nav>
+      </div>
 
-      <nav
+      <div
         className={joinclass(
           menuOpen ? "flex flex-col space-y-6 absolute" : "hidden",
           "sm:hidden rounded-md mobile-menu bg-dark_violet py-8 text-white"
@@ -46,7 +46,7 @@ function Navbar({ joinclass }) {
             Sign Up
           </span>
         </div>
-      </nav>
+      </div>
     </header>
   );
 }
