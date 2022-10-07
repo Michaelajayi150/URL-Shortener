@@ -21,7 +21,9 @@ function Footer() {
           <nav className="grid gap-4 text-center text-grayish_violet md:grid-cols-3 md:ml-auto md:mr-6 md:gap-16 md:text-start">
             {links.map((link, index) => (
               <div key={index} className="mb-4">
-                <h4 className="text-white font-semibold mb-3">{link.tag}</h4>
+                <span className="text-white font-semibold mb-3">
+                  {link.tag}
+                </span>
                 <div className="flex flex-col">
                   {link.sublinks.map((sublink, index) => (
                     <a

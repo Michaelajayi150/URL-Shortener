@@ -9,9 +9,7 @@ function Navbar({ joinclass }) {
   };
   return (
     <header className="px-4 relative max-w-screen-lg mx-auto pt-6 flex items-center md:items-end justify-between">
-      <nav className="h-8">
-        <img src={logo} alt="Shortly" />
-      </nav>
+      <img src={logo} alt="Shortly" />
 
       <nav onClick={toggle} className="md:hidden">
         <img src={menu} alt="Open menu" />
